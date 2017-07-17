@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cropper</title>
+		<link rel="stylesheet" type="text/css" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/cropper/1.0.0/cropper.min.css"/>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/cropper/1.0.0/cropper.min.js"></script>
+		<script type="text/javascript" src="cropperImg.js"></script>
+
+		<style>
+		.img-container {
+			width: 400px;
+			height: 300px;
+			display: inline-block;
+		}
+		.img-canvas {
+			display: inline-block;
+		}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="img-container">
+			<img src="img/fluits.jpg" id="img−default" class="img-responsive"  alt="fluits">
+		</div>
+
+		<!-- トリミングされた画像が表示される場所。縦横は好みで設定 -->
+		<canvas id="jsi-canvas" class="img-canvas" width="200" height="200"></canvas>
+
+	</body>
+</html>
